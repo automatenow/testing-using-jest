@@ -115,7 +115,6 @@ This project includes VS Code tasks:
 
 - [Jest Documentation](https://jestjs.io/docs/getting-started)
 - [Jest Matchers](https://jestjs.io/docs/expect)
-- [Testing Best Practices](https://github.com/goldbergyoni/javascript-testing-best-practices)
 
 ## 🤝 Contributing
 
