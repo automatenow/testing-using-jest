@@ -12,14 +12,25 @@ describe('Calculator', () => {
     test('should add two positive numbers correctly', () => {
       // Arrange
       const a = 5;
-      const b = 3;
-      const expected = 8;
+      const b = 2
+      const expected = 7;
 
       // Act
       const result = calculator.add(a, b);
 
       // Assert
       expect(result).toBe(expected);
+    });
+
+    test('arrays', () => {
+      const arr1 = [1, 2, 3];
+      const arr2 = [1, 2, 3];
+
+      // This will fail because toBe checks for reference equality
+      // expect(arr1).toBe(arr2);
+
+      // This will pass because toEqual checks for value equality
+      expect(arr1).toEqual(arr2);
     });
 
     test('should add negative numbers correctly', () => {

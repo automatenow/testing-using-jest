@@ -1,6 +1,6 @@
 const StringUtils = require('../src/stringUtils');
 
-describe('StringUtils', () => {
+describe('Strings', () => {
   describe('capitalize', () => {
     test('should capitalize first letter of lowercase string', () => {
       // Arrange
@@ -12,6 +12,17 @@ describe('StringUtils', () => {
 
       // Assert
       expect(result).toBe(expected);
+    });
+
+    test('objects', () => {
+      const obj1 = { name: 'Alice', age: 30 };
+      const obj2 = { name: 'Alice', age: 30 };
+
+      // This will fail because toBe checks for reference equality
+      // expect(obj1).toBe(obj2);
+
+      // This will pass because toEqual checks for value equality
+      expect(obj1).toEqual(obj2);
     });
 
     test('should handle already capitalized strings', () => {
@@ -59,7 +70,7 @@ describe('StringUtils', () => {
     });
   });
 
-  describe('isPalindrome', () => {
+  describe('palindrome', () => {
     test('should identify palindromes correctly', () => {
       expect(StringUtils.isPalindrome('racecar')).toBe(true);
       expect(StringUtils.isPalindrome('level')).toBe(true);
@@ -91,7 +102,7 @@ describe('StringUtils', () => {
     });
   });
 
-  describe('wordCount', () => {
+  describe('word count', () => {
     test('should count words correctly', () => {
       expect(StringUtils.wordCount('hello world')).toBe(2);
       expect(StringUtils.wordCount('the quick brown fox')).toBe(4);
@@ -116,7 +127,7 @@ describe('StringUtils', () => {
     });
   });
 
-  describe('normalizeWhitespace', () => {
+  describe('whitespace', () => {
     test('should normalize multiple spaces', () => {
       expect(StringUtils.normalizeWhitespace('hello    world')).toBe('hello world');
       expect(StringUtils.normalizeWhitespace('the  quick   brown    fox')).toBe('the quick brown fox');
