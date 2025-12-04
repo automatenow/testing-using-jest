@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Snapshot Testing should match user card snapshot 1`] = `
+{
+  "children": [
+    {
+      "children": [
+        {
+          "text": "Bug Hunter",
+          "type": "h2",
+        },
+        {
+          "className": "user-role",
+          "text": "Tester",
+          "type": "span",
+        },
+      ],
+      "className": "user-card-header",
+      "type": "header",
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "text": "Email: ",
+              "type": "strong",
+            },
+            {
+              "text": "bug@automateNow.io",
+              "type": "span",
+            },
+          ],
+          "type": "p",
+        },
+        {
+          "children": [
+            {
+              "text": "Joined: ",
+              "type": "strong",
+            },
+            {
+              "text": "2026-01-01",
+              "type": "span",
+            },
+          ],
+          "type": "p",
+        },
+      ],
+      "className": "user-card-body",
+      "type": "body",
+    },
+  ],
+  "className": "user-card",
+  "type": "card",
+}
+`;

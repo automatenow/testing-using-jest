@@ -9,27 +9,10 @@ This Jest testing project was created by [Marco A. Cruz](http://www.linkedin.com
 - Complete Jest setup with configuration
 - Sample source code with utility functions
 - Comprehensive unit tests demonstrating Jest features
+- Snapshot testing
 - Test coverage reporting
 - Watch mode for development
 - VS Code tasks integration
-
-## 📁 Project Structure
-
-```
-testing-using-jest/
-├── src/
-│   ├── calculator.js       # Calculator class with arithmetic operations
-│   ├── stringUtils.js      # String utility functions
-│   └── index.js            # Main entry point
-├── tests/
-│   ├── calculator.test.js  # Unit tests for Calculator class
-│   └── stringUtils.test.js # Unit tests for StringUtils class
-├── .github/
-│   └── copilot-instructions.md # Copilot configuration
-├── jest.config.js        # Jest configuration
-├── package.json          # Project dependencies and scripts
-└── README.md             # This file
-```
 
 ## 🛠 Setup
 
@@ -59,6 +42,7 @@ testing-using-jest/
 
 ### Jest Features Used
 - **Matchers**: `toBe`, `toBeCloseTo`, `toThrow`
+- **Snapshot Testing**: `toMatchSnapshot`
 - **Mocking**: Error handling validation
 - **Coverage**: Code coverage reporting with thresholds
 - **Watch mode**: Development-friendly test running
