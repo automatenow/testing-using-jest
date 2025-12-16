@@ -1,27 +1,30 @@
 module.exports = {
-  // Test environment
-  testEnvironment: 'node',
+    // Test environment
+    testEnvironment: 'node',
 
-  // Coverage collection
-  collectCoverageFrom: [
-    'src/**/*.js',
-    '!src/index.js'
-  ],
+    collectCoverageFrom: [
+        'src/**/*.js',
+        '!src/index.js'
+    ],
 
-  // Coverage thresholds
-  coverageThreshold: {
-    global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: 80
-    }
-  },
+    coverageThreshold: {
+        global: {
+            branches: 80,
+            functions: 80,
+            statements: 80,
+            lines: 80
+        },
+        './src/apiClient.js': {
+            branches: 100,
+            functions: 100,
+            statements: 100,
+            lines: 100
+        }
+    },
 
-  // Coverage reporters
-  coverageReporters: [
-    'text',
-    'lcov',
-    'html'
-  ]
+    coverageReporters: [
+        'text',
+        'lcov',
+        'html'
+    ]
 };
