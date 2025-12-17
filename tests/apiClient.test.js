@@ -24,8 +24,7 @@ describe('ApiClient - Basic Async Testing', () => {
       const response = await apiClient.get('/users/1');
 
       expect(response.status).toBe(200);
-      expect(response.data).toHaveLength(2);
-      expect(response.data[0]).toEqual({
+      expect(response.data).toEqual({
         id: 1,
         name: 'John Doe',
         email: 'john@automateNow.io'

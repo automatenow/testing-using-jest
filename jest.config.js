@@ -1,5 +1,4 @@
 module.exports = {
-    // Test environment
     testEnvironment: 'node',
 
     collectCoverageFrom: [
